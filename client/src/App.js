@@ -1,12 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Switch,Route} from 'react-router-dom'
+import Nav from './components/Nav'
+import Home from './components/Home'
+import About from './components/About'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div className="App">
-      <h1>School Manager</h1>
-    </div>
+    <React.Fragment>
+        <Nav />  
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+        </Switch>
+    </React.Fragment>
   );
 }
 
