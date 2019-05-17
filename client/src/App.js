@@ -1,17 +1,17 @@
 import React from 'react';
 import './App.css';
 import {Switch,Route} from 'react-router-dom'
-import Nav from './components/Nav'
-import Home from './components/Home'
+import NavBar from './components/NavBar'
+import Second_nav from './components/Second_nav'
 import About from './components/About'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
     <React.Fragment>
-        <Nav />  
+        <NavBar />  
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Second_nav} />
           <Route path="/about" component={About} />
         </Switch>
     </React.Fragment>
