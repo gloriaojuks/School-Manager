@@ -5,7 +5,8 @@ body p{
     font-weight: 400; font-size: 18px
 }
 /* styling for nav_bar starts here */
-.nav_bar{padding-left: 100px; background-color: #fff}
+.nav_bar{padding-left: 100px; background-color: #fff;}
+.nav_bar .nav_item{color :black;margin-right: 20px}
 body p{margin-top: 20px}
 body .login_btn{margin-right:30px}
 /* body .contact_icon {margin-left: 100px} */

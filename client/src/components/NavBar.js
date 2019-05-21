@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
 import { Nav } from 'react-bootstrap'
 import { Form } from 'react-bootstrap'
+import {NavLink } from "react-router-dom"
 import { NavDropdown } from 'react-bootstrap'
 import { FormControl } from 'react-bootstrap'
 import { Navbar } from 'react-bootstrap'
@@ -22,17 +22,17 @@ export class NavBar extends Component {
   <Navbar.Brand style={{marginLeft: '40%'}}  href="#home"><Image width="100" src="https://www.codester.com/static/uploads/items/8870/icon.png"/></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">About</Nav.Link>
-      <Nav.Link href="#link">Contact Us</Nav.Link>
-      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+    <Nav style={{color: 'red'}} className="mr-auto">
+    <NavLink className="nav_item" to="/">home</NavLink>
+      <NavLink className="nav_item" to="/contact">About Us</NavLink>
+      <NavLink className="nav_item" to="/contact">Contact Us</NavLink>
+      {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">student</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">admin</NavDropdown.Item>
         {/* <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item> */}
-        <NavDropdown.Divider />
+        {/* <NavDropdown.Divider />
         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
+      </NavDropdown> */} 
     </Nav>
     {/* <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
