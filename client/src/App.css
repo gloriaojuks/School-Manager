@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap');
+
+body p{
+    font-family: 'Gentium Basic', serif;
+    font-weight: 400; font-size: 18px
+}
+/* styling for nav_bar starts here */
+.nav_bar{padding-left: 100px; background-color: #fff;}
+.nav_bar .nav_item{color :black;margin-right: 20px}
+body p{margin-top: 20px}
+body .login_btn{margin-right:30px}
+/* body .contact_icon {margin-left: 100px} */
+/* styling for nav_bar starts here */
+
+
+/* styling for second_nav starts here */
+.drop:hover{background: red}
+.nav_2{padding-top: 40px;color: #fff;text-align: center;height:100px;background:#000}
+.nav_2 h3{color: #47BBFF}
+.nav_2_span{font-size: 40px;color: #FFA500}
+.index_row1{margin-top: 20px}
+.index_image{margin-top: 40px}
+/* styling for second_nav ends here */
