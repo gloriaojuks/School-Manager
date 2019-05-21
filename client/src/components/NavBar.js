@@ -23,7 +23,7 @@ export class NavBar extends Component {
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav style={{color: 'red'}} className="mr-auto">
-    <NavLink className="nav_item" to="/">home</NavLink>
+    <NavLink className="nav_item" to="/">Home</NavLink>
       <NavLink className="nav_item" to="/contact">About Us</NavLink>
       <NavLink className="nav_item" to="">Latest News</NavLink>
       <NavLink className="nav_item" to="/contact">Contact Us</NavLink>
