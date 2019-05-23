@@ -17,17 +17,19 @@ import Sec_nav from './Sec_nav'
                 <Container style={{padding: '80px'}}>
                        <Row className="">
                          <Col style={{background:'',opacity: '0.9'}} sm={4}>
-                         <Row style={{padding: '30px'}}>
-                            <Col xs={6}><h3>Contact</h3><br />31 Aggrey Road<br />Opposite British Accamemy</Col>
-                            <Col xs={6}><h3>Socials</h3> <br />
+                         <Row style={{marginTop: '-22px',padding: '20px'}}>
+                            <Col className="contact_row" sm={12}><h3>Contact</h3><br />31 Aggrey Road<br />Opposite British Accamemy</Col>
+                            <Col className="contact_row" sm={12}><h3 style={{marginTop: '10px'}}>Socials</h3> <br />
                             <img src="https://img.icons8.com/color/36/000000/facebook-new.png" />
                             <br />
                             <img src="https://img.icons8.com/color/36/000000/twitter.png" />
                              <br />
                              <img src="https://img.icons8.com/ultraviolet/36/000000/instagram-new.png" />
                              </Col>
-                             <h2 style={{paddingTop: '20px'}}>Give us a call on:</h2>
-                             <p>+865 675 897</p><br />
+                             <h2 style={{paddingTop: '20px'}}>You can reach us:</h2>
+                             <p>+865 675 897</p> and smartshcool@gmail.com<br />
+                             
+                             
                              
                             
                         </Row>
