@@ -5,7 +5,7 @@ body p{
     font-weight: 400; font-size: 18px
 }
 /* styling for nav_bar starts here */
-.nav_bar{padding-left: 100px; background-color: #fff;}
+.nav_bar{padding-left: 100px; background-color: #fff;height: 150px;}
 .nav_bar .nav_item{color :black;margin-right: 20px}
 body p{margin-top: 20px}
 body .login_btn{margin-right:30px}
@@ -21,3 +21,206 @@ body .login_btn{margin-right:30px}
 .index_row1{margin-top: 20px}
 .index_image{margin-top: 40px}
 /* styling for second_nav ends here */
+
+
+/* styling for home page here */
+.home_section{background: #FFA500; padding: 30px}
+/* styling for home page ends here */
+
+
+/* Styling for About Page starts here */
+.card_title{color:#FFA500;font-weight: 800 }
+/* Styling for About Page starts here */
+
+.carousel .item {
+  height: 600px;
+}
+
+.item img {
+    /* position: absolute; */
+    /* object-fit:cover; */
+    top: 0;
+    left: 0;
+    min-height: 800px;
+}
+
+/* login/sign up starts here */
+.App {
+    height: 100vh;
+    display: flex;
+    color: white;
+    
+  }
+  
+  .App__Aside {
+    width: 50%;
+    background-color: #47BBFF;
+    padding: 20px; text-align:center
+  }
+
+  .App__Aside h3{
+    text-align: center;color:black;font-size: 25px
+  }
+  
+  .App__Form {
+    width: 50%;
+    background-color:#FFA500 ;
+    padding: 25px 40px;
+    overflow: auto;
+  }
+  
+  .PageSwitcher {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10%;
+  }
+  
+  .PageSwitcher__Item {
+    background-color: #47BBFF;
+    color: #fff;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: .9em;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .PageSwitcher__Item--Active {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .PageSwitcher__Item:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .PageSwitcher__Item:last-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  .FormCenter {
+    margin-bottom: 100px;
+  }
+  
+  .FormTitle {
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  
+  .FormTitle__Link {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.7em;
+    margin: 0 10px;
+    padding-bottom: 5px;
+  }
+  
+  .FormTitle__Link:first-child {
+    margin-left: 0;
+  }
+  
+  .FormTitle__Link--Active {
+    color: white;
+    border-bottom: 1px solid #000;
+  }
+  
+  .FormField {
+    margin-bottom: 40px;
+  }
+  
+  .FormField__Label {
+    display: block;
+    text-transform: uppercase;
+    font-size: .9em;
+    color: #000;
+  }
+  .FormField__Input {
+    width: 85%;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    outline: none;
+    border-bottom: 1px solid #000;
+    font-size: 1em;
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .FormField__Input::placeholder {
+    color: #000;
+  }
+  
+  .FormField__Button {
+    background-color: #47BBFF;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 15px 70px;
+    font-size: .8em;
+    font-weight: 500;
+    width: 2px;
+    padding-right: 50px;
+    padding-left: 35px;
+  }
+  
+  .FormField__Link {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1.5px solid #000;
+    padding-bottom: 5px;
+
+  }
+  
+  .FormField__CheckboxLabel {
+    color: #000;
+    font-size: .9em;
+  }
+  
+  .FormField__Checkbox {
+    position: relative;
+    top: 1.5px;
+  }
+  
+  .FormField__TermsLink {
+    color: white;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-left: 5px;
+  }
+  /*login/signup form ends here  */
+
+  /* media queries starts here */
+  @media  (max-width: 420px) {
+   .contact_row{margin-right: 30px}
+  }
+
+  @media (max-width: 768px){
+    .carousel .item {
+      height: 100%;
+    }
+    
+    .item img {top: 0;left: 0;min-height: 100%;}
+    .home_section{height: auto}
+    .FormField__Link {font-size: 10px}
+
+  }
+
+  @media  (max-width: 480px) {
+  .App__Aside {
+    height: 1300px
+  }
+  .App__Form {
+   height: 1300px;
+  }
+}
