@@ -1,0 +1,15 @@
+Client folder ==> Holds the client side code (react);
+
+***anything outside the client belongs to the server***
+route folder ==> Holds our routes
+api ==> hosds the api routes
+
+Model ==> this holds our database schema for mongoose
+
+config ==> contains our server side configuration such as auth keys etc
+
+Validator ==> holds our utility function used to handle data comming through api
+
+Note: if your having issues understanding the sever structure,
+concentrate on the client for now, dont worry it would all make
+sence when we meet or as the we go further
