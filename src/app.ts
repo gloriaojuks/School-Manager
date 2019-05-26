@@ -3,10 +3,13 @@ import {router as UserRouter } from './routes/user.route';
 import {router as AdminRouter } from './routes/admin.route';
 import {router as NewsRouter } from './routes/news.route';
 import { mongoose } from './exports/mongoose';
-const session = require('express-session');
 import * as path from 'path';
 import morgan = require('morgan');
-import { request } from 'https';
+
+const session = require('express-session');
+const cors = require('cors');
+
+
 
 const app: Application = express();
 const port = 5000 || process.env.PORT 
@@ -25,6 +28,7 @@ app.use(session({
     resave: true,
     saveUninitialized: true,
   }))
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'pages')));
