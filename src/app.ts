@@ -37,7 +37,7 @@ app.use('/css', express.static(path.join(__dirname, 'static/css')))
 app.use(morgan('combined'))
 
 
-app.all('/', (req: Request, res:Response) => {
+app.get('/', (req: Request, res:Response) => {
     res.render('index');
 })
 
