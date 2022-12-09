@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/gloriaojuks/meme-crib#readme",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "mongoose": "^5.4.19"
   }
 }
